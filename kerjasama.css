@@ -1,0 +1,252 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    font-family:Arial, sans-serif;
+    background:#eef2ff;
+    color:#333;
+}
+
+/* HEADER */
+.header{
+    background:#5b2c83;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.header h1{
+    margin:0;
+    font-size:40px;
+}
+
+.header p{
+    margin-top:10px;
+}
+
+/* NAVIGASI */
+.navigasi{
+    background:#2f2f2f;
+    padding:15px;
+    text-align:center;
+}
+
+.navigasi a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+.navigasi a:hover{
+    color:#ffd700;
+}
+/* HERO */
+.hero{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h2{
+    font-size:42px;
+    color:#5b2c83;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:750px;
+    margin:auto;
+
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+    padding-bottom:70px;
+}
+
+
+
+
+
+/* BUTTON */
+button{
+    background:
+    linear-gradient(45deg,#5b2c83,#7d4ab1);
+
+    color:white;
+
+    border:none;
+
+    padding:13px 24px;
+
+    border-radius:30px;
+
+    font-size:15px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+
+    background:
+    linear-gradient(45deg,#7d4ab1,#5b2c83);
+}
+
+/* FOOTER */
+.footer{
+    background:#5b2c83;
+
+    color:white;
+
+    text-align:center;
+
+    padding:28px;
+
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .overlay h1{
+        font-size:38px;
+    }
+
+    .overlay p{
+        font-size:17px;
+    }
+
+    .hero h2{
+        font-size:32px;
+    }
+
+    .navigasi a{
+        display:block;
+        margin:12px;
+    }
+
+    .container{
+        width:95%;
+    }
+
+}
+
+/* Grid Layout: Otomatis membagi kolom secara rapi */
+.news-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Jarak antar kartu */
+}
+
+/* Desain Kartu Persis Seperti di Foto */
+.news-card {
+    background: #ffffff;
+    border-radius: 24px; /* Sudut melengkung halus seperti di foto */
+    overflow: hidden;
+    width: 360px; /* Lebar seimbang tiap kartu */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06); /* Bayangan soft di sekeliling kartu */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek interaktif hover */
+.news-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Bagian Gambar Atas Kartu */
+.card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menjamin gambar tidak gepeng */
+}
+
+/* Bagian Teks Dalam Kartu */
+.card-content {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/* Pengaturan Tanggal & Ikon Kalender */
+.card-date {
+    font-size: 0.88rem;
+    color: #8c8c8c;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-date i {
+    color: #8c8c8c;
+}
+
+/* Pengaturan Judul Berita Kerjasama (Warna Ungu Khas) */
+.card-title {
+    font-size: 1.35rem;
+    color: #4c1d95; /* Warna ungu tua/indigo elegan */
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 14px;
+}
+
+/* Pengaturan Teks Paragraf Deskripsi */
+.card-description {
+    font-size: 0.92rem;
+    color: #64748b; /* Warna abu-abu teks netral */
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex-grow: 1; /* Trik agar posisi tombol selalu rata bawah */
+}
+
+/* Desain Tombol Berbentuk Kapsul Ungu */
+.card-button {
+    background-color: #6d28d9; /* Warna ungu tombol */
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 20px; /* Bentuk kapsul melengkung sempurna */
+    cursor: pointer;
+    align-self: flex-start; /* Tombol pas seukuran teksnya */
+    transition: background-color 0.2s ease;
+}
+
+/* Efek Tombol Saat Dilewati Kursor */
+.card-button:hover {
+    background-color: #5b21b6; /* Ungu gelap */
+}

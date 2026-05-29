@@ -1,0 +1,178 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* BODY */
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f6fb;
+    color:#333;
+}
+
+/* HEADER */
+.header{
+    background:#5b2c83;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.header h1{
+    margin:0;
+    font-size:40px;
+}
+
+.header p{
+    margin-top:10px;
+}
+
+/* NAVIGASI */
+.navigasi{
+    background:#2f2f2f;
+    padding:15px;
+    text-align:center;
+}
+
+.navigasi a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+.navigasi a:hover{
+    color:#ffd700;
+}
+/* HERO */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h2{
+    font-size:40px;
+    color:#5b2c83;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px,1fr));
+    gap:30px;
+
+    padding-bottom:60px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* IMAGE */
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+/* CONTENT */
+.content{
+    padding:25px;
+}
+
+.tanggal{
+    color:gray;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+.content h2{
+    color:#5b2c83;
+    margin-bottom:15px;
+    font-size:25px;
+}
+
+.content p{
+    line-height:1.7;
+    margin-bottom:20px;
+    color:#555;
+}
+
+/* BUTTON */
+button{
+    background:linear-gradient(45deg,#5b2c83,#7d4ab1);
+
+    color:white;
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    font-size:15px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:linear-gradient(45deg,#7d4ab1,#5b2c83);
+}
+
+/* FOOTER */
+.footer{
+    background:#5b2c83;
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+    margin-top:30px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .overlay h1{
+        font-size:38px;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+    .navbar a{
+        display:block;
+        margin:10px;
+    }
+
+}

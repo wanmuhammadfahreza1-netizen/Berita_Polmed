@@ -1,0 +1,98 @@
+/* Reset dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+.header{
+    background:#5b2c83;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.header h1{
+    margin:0;
+    font-size:40px;
+}
+
+.header p{
+    margin-top:10px;
+}
+
+/* NAVIGASI */
+.navigasi{
+    background:#2f2f2f;
+    padding:15px;
+    text-align:center;
+}
+
+.navigasi a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+.navigasi a:hover{
+    color:#ffd700;
+}
+
+/* Layout Utama */
+.container {
+    width: 90%;
+    margin: 20px auto;
+    display: flex; /* Atau bisa pakai float: left */
+}
+
+.konten-kiri {
+    width: 70%;
+    margin-right: 20px;
+}
+
+.konten-kanan {
+    width: 30%;
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Berita */
+.berita-utama {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.kotak-berita {
+    background-color: rgb(226, 226, 226);
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ikon-berita {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+/* Bagian Halaman bawah */
+.halaman-section {
+    min-height: 100vh;
+    padding: 60px 20px 20px 20px;
+    background-color: rgb(251, 251, 251);
+    border-top: 2px solid #ccc;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
